@@ -3,6 +3,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
 // Import needed templates
 import '../../ui/layouts/body/body.js';
+import '../../ui/layouts/body/body-empty.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/not-found/not-found.js';
 
@@ -16,6 +17,6 @@ FlowRouter.route('/', {
 
 FlowRouter.notFound = {
   action() {
-    BlazeLayout.render('App_body', { main: 'App_notFound' });
+    BlazeLayout.render('App_body_empty', { main: 'App_notFound' });
   },
 };

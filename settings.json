@@ -1,0 +1,11 @@
+//run using meteor --settings settings.json
+{
+    "public":{
+        "ga":{
+            "account":"UA-XXXXXX-x"
+        }
+    },
+    "private":{
+        
+    }
+}
